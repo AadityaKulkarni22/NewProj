@@ -1,0 +1,53 @@
+:root {
+      --bg-canvas: #0B1120;
+      --bg-card: #111827;
+      --bg-elevated: #1E293B;
+      --border-subtle: #1F2937;
+      --accent-cyan: #06B6D4;
+      --accent-amber: #F59E0B;
+      --accent-crimson: #EF4444;
+      --accent-emerald: #10B981;
+    }
+    body {
+      background-color: var(--bg-canvas);
+      color: #F8FAFC;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    .font-mono-tech {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .glass-card {
+      background: rgba(17, 24, 39, 0.88);
+      border: 1px solid rgba(51, 65, 85, 0.7);
+      backdrop-filter: blur(8px);
+    }
+    .tab-active {
+      background: linear-gradient(135deg, #0891B2 0%, #0E7490 100%);
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(6, 182, 212, 0.25);
+    }
+    input[type="range"] {
+      accent-color: #06B6D4;
+    }
+    @media print {
+      body {
+        background: #FFFFFF !important;
+        color: #0F172A !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .glass-card {
+        background: #FFFFFF !important;
+        border: 1px solid #CBD5E1 !important;
+        color: #0F172A !important;
+        break-inside: avoid;
+      }
+      .text-slate-300, .text-slate-400, .text-slate-200 {
+        color: #334155 !important;
+      }
+      .text-white {
+        color: #0F172A !important;
+      }
+    }
+  
